@@ -1,0 +1,49 @@
+respawn 	= 0;
+respawnDialog 	= 1;
+disabledAI 	= 0;
+
+author		= "A3Pro";
+overviewPicture	= "";
+overviewText = "";
+
+OnLoadName 	= "";
+loadScreen 	= "";
+OnLoadMission = "";
+OnLoadIntro = "";
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 15;           // Max # of players the mission supports
+	
+};
+
+class Params
+{
+	class AISkill
+	{
+		title = "AI Skill"; // Param name visible in the list
+		values[] = {0.2,0.6,1}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"Recruit","Regular","Veteran"}; // Description of each selectable item
+		default = 0.6; // Default value; must be listed in 'values' array, otherwise 0 is used
+	};
+	class Daytime
+	{
+		title = "Time of day";
+		texts[] = {"Morning 6AM","Midday","Evening 6PM","Midnight"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
+ 		isGlobal = 1; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
+	};
+	class Weather
+	{
+		title = "Weather";
+		texts[] = {"Sunny","Light Overcast","Overcast","Heavy overcast","Storm"};
+		values[] = {0,25,50,75,100};
+		default = 0;
+		isGlobal = 1;
+		function = "BIS_fnc_setOvercast";
+	}
+};
