@@ -3,11 +3,11 @@ respawnDialog 	= 1;
 disabledAI 	= 0;
 
 author		= "A3Pro";
-overviewPicture	= "";
+overviewPicture	= "images\load_ttw_rexa.paa";
 overviewText = "";
 
-OnLoadName 	= "";
-loadScreen 	= "";
+OnLoadName 	= "Chernerus rebellion";
+loadScreen 	= "images\load_ttw_rexa.paa";
 OnLoadMission = "";
 OnLoadIntro = "";
 
