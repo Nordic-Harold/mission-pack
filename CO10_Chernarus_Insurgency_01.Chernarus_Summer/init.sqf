@@ -38,6 +38,15 @@ waitUntil {player==player};
 taskFindWeapons = [player,"taskFindWeapons","Steal weapons","Break into guarded warehouse and steal weapons and ammo",getMarkerPos "warehouse"] call a3_createTask;
 taskEscape = [player,"taskEscape","Escape to Pusta","After stealing weapons, escape to safe house in Pusta",getMarkerPos "safeHouse"] call a3_createTask;
 
+// briefing
+player createDiaryRecord ["Diary",["Logistics","There is some equipment on randez-vous site, but don't expect any weapons. Radios, few compasses, bandages, clothes and some binoculars."]];
+player createDiaryRecord ["Diary",["Execution","You will need to sneak into the warehouses and find the weapons cache without being noticed. Do not try to get close to any guards as they are trigger-happy. If you manage to steal weapons, try to avoid contact as much as possible, but beware the enemy will try to hunt you down."]];
+player createDiaryRecord ["Diary",["Mission","Plunder the warehouse, steal weapons and ammo and escape to safe house in Pusta."]];
+player createDiaryRecord ["Diary",["Situation","Enemy forces in Elektrozavodsk: Elements of Russian infantry platoon."]];
+player createDiaryRecord ["Diary",["Situation","Friendly forces: A handful of insurgent understudies."]];
+player createDiaryRecord ["Diary",["Situation","Armed Forces of Russian Federation launched a sneak attack on Chernarus Republic in May 2008. Chernarus Republic Army collapsed in 5 days. AFRF are controlling entire area of the Republic. You and your friends will try to start a rebellion against Russian occupation."]];
+
+
 if (!isDedicated) then {
 	[] spawn {
 		private ["_isArmed"];
