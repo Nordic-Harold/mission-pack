@@ -1,0 +1,40 @@
+respawn 	= 0;
+respawnDialog 	= 1;
+disabledAI 	= 0;
+
+author		= "A3Pro";
+overviewPicture	= "images\load_ttw_rexa.paa";
+overviewText = "";
+
+OnLoadName 	= "Chernarus rebellion";
+loadScreen 	= "images\load_ttw_rexa.paa";
+OnLoadMission = "";
+OnLoadIntro = "";
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 10;           // Max # of players the mission supports
+	
+};
+
+class Params
+{
+	class AISkill
+	{
+		title = "AI Skill"; // Param name visible in the list
+		values[] = {0.2,0.6,1}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"Recruit","Regular","Veteran"}; // Description of each selectable item
+		default = 0.6; // Default value; must be listed in 'values' array, otherwise 0 is used
+	};
+	class Weather
+	{
+		title = "Weather";
+		texts[] = {"Sunny","Light Overcast","Overcast","Heavy overcast","Storm"};
+		values[] = {0,25,50,75,100};
+		default = 0;
+		isGlobal = 1;
+		function = "BIS_fnc_setOvercast";
+	}
+};
