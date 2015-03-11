@@ -6,7 +6,7 @@ author		= "A3Pro";
 overviewPicture	= "images\load_ttw_rexa.paa";
 overviewText = "";
 
-OnLoadName 	= "Chernarus rebellion";
+OnLoadName 	= "Chernarus rebellion - Gathering intel";
 loadScreen 	= "images\load_ttw_rexa.paa";
 OnLoadMission = "";
 OnLoadIntro = "";
