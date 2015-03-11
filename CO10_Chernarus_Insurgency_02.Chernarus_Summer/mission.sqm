@@ -118,7 +118,7 @@ class Mission
 					skill=0.5;
 					text="squadleader_1";
 					syncId=0;
-					synchronizations[]={9,8,7,10};
+					synchronizations[]={7,8,9,10};
 				};
 				class Item1
 				{
