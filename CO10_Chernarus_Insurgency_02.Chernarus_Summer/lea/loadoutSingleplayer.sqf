@@ -311,7 +311,6 @@ clearWeaponCargoGlobal (uniformContainer sniper_1);
 (uniformContainer sniper_1) additemcargoGlobal ["cse_packing_bandage",2];
 (uniformContainer sniper_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer sniper_1) additemcargoGlobal ["cse_morphine",1];
-sniper_1 addWeapon "tf_anprc148jem";
 sniper_1 selectWeapon (primaryWeapon sniper_1);
 };
 
@@ -341,6 +340,7 @@ clearWeaponCargoGlobal (uniformContainer spotter_1);
 (uniformContainer spotter_1) additemcargoGlobal ["cse_packing_bandage",2];
 (uniformContainer spotter_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer spotter_1) additemcargoGlobal ["cse_morphine",1];
+spotter_1 addWeapon "tf_anprc148jem";
 spotter_1 selectWeapon (primaryWeapon spotter_1);
 };
 

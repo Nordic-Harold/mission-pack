@@ -10,7 +10,7 @@
 * + ArmA 3
 * + TFAR
 * 
-* Call the script: _dummy = [] execvm "lea\loadoutMultiplayer.sqf";
+* Call the script: _dummy = [] execvm "lea\loadoutSingleplayer.sqf";
 * 
 */
 
@@ -25,7 +25,6 @@
 */
 
 if (!isNil "squadleader_1") then {
-	if (player == squadleader_1) exitwith {
 removeallweapons squadleader_1;
 removeallassigneditems squadleader_1;
 removeBackpack squadleader_1;
@@ -56,11 +55,9 @@ clearWeaponCargoGlobal (uniformContainer squadleader_1);
 (uniformContainer squadleader_1) additemcargoGlobal ["cse_morphine",1];
 squadleader_1 addWeapon "ItemRadio";
 squadleader_1 selectWeapon (primaryWeapon squadleader_1);
-	};
 };
 
 if (!isNil "teamleader_1") then {
-	if (player == teamleader_1) exitwith {
 removeallweapons teamleader_1;
 removeallassigneditems teamleader_1;
 removeBackpack teamleader_1;
@@ -91,11 +88,9 @@ clearWeaponCargoGlobal (uniformContainer teamleader_1);
 (uniformContainer teamleader_1) additemcargoGlobal ["cse_morphine",1];
 teamleader_1 addWeapon "ItemRadio";
 teamleader_1 selectWeapon (primaryWeapon teamleader_1);
-	};
 };
 
 if (!isNil "autorifleman_1") then {
-	if (player == autorifleman_1) exitwith {
 removeallweapons autorifleman_1;
 removeallassigneditems autorifleman_1;
 removeBackpack autorifleman_1;
@@ -127,11 +122,9 @@ clearWeaponCargoGlobal (uniformContainer autorifleman_1);
 (uniformContainer autorifleman_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer autorifleman_1) additemcargoGlobal ["cse_morphine",1];
 autorifleman_1 selectWeapon (primaryWeapon autorifleman_1);
-	};
 };
 
 if (!isNil "antitank_1") then {
-	if (player == antitank_1) exitwith {
 removeallweapons antitank_1;
 removeallassigneditems antitank_1;
 removeBackpack antitank_1;
@@ -159,11 +152,9 @@ clearWeaponCargoGlobal (uniformContainer antitank_1);
 (uniformContainer antitank_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer antitank_1) additemcargoGlobal ["cse_morphine",1];
 antitank_1 selectWeapon (primaryWeapon antitank_1);
-	};
 };
 
 if (!isNil "antiair_1") then {
-	if (player == antiair_1) exitwith {
 removeallweapons antiair_1;
 removeallassigneditems antiair_1;
 removeBackpack antiair_1;
@@ -191,11 +182,9 @@ clearWeaponCargoGlobal (uniformContainer antiair_1);
 (uniformContainer antiair_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer antiair_1) additemcargoGlobal ["cse_morphine",1];
 antiair_1 selectWeapon (primaryWeapon antiair_1);
-	};
 };
 
 if (!isNil "medic_1") then {
-	if (player == medic_1) exitwith {
 removeallweapons medic_1;
 removeallassigneditems medic_1;
 removeBackpack medic_1;
@@ -227,11 +216,9 @@ clearItemCargoGlobal (uniformContainer medic_1);
 clearMagazineCargoGlobal (uniformContainer medic_1);
 clearWeaponCargoGlobal (uniformContainer medic_1);
 medic_1 selectWeapon (primaryWeapon medic_1);
-	};
 };
 
 if (!isNil "rifleman_2") then {
-	if (player == rifleman_2) exitwith {
 removeallweapons rifleman_2;
 removeallassigneditems rifleman_2;
 removeBackpack rifleman_2;
@@ -259,11 +246,9 @@ clearWeaponCargoGlobal (uniformContainer rifleman_2);
 (uniformContainer rifleman_2) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer rifleman_2) additemcargoGlobal ["cse_morphine",1];
 rifleman_2 selectWeapon (primaryWeapon rifleman_2);
-	};
 };
 
 if (!isNil "rifleman_1") then {
-	if (player == rifleman_1) exitwith {
 removeallweapons rifleman_1;
 removeallassigneditems rifleman_1;
 removeBackpack rifleman_1;
@@ -291,11 +276,9 @@ clearWeaponCargoGlobal (uniformContainer rifleman_1);
 (uniformContainer rifleman_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer rifleman_1) additemcargoGlobal ["cse_morphine",1];
 rifleman_1 selectWeapon (primaryWeapon rifleman_1);
-	};
 };
 
 if (!isNil "sniper_1") then {
-	if (player == sniper_1) exitwith {
 removeallweapons sniper_1;
 removeallassigneditems sniper_1;
 removeBackpack sniper_1;
@@ -328,13 +311,10 @@ clearWeaponCargoGlobal (uniformContainer sniper_1);
 (uniformContainer sniper_1) additemcargoGlobal ["cse_packing_bandage",2];
 (uniformContainer sniper_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer sniper_1) additemcargoGlobal ["cse_morphine",1];
-sniper_1 addWeapon "tf_anprc148jem";
 sniper_1 selectWeapon (primaryWeapon sniper_1);
-	};
 };
 
 if (!isNil "spotter_1") then {
-	if (player == spotter_1) exitwith {
 removeallweapons spotter_1;
 removeallassigneditems spotter_1;
 removeBackpack spotter_1;
@@ -360,7 +340,7 @@ clearWeaponCargoGlobal (uniformContainer spotter_1);
 (uniformContainer spotter_1) additemcargoGlobal ["cse_packing_bandage",2];
 (uniformContainer spotter_1) additemcargoGlobal ["cse_quikclot",3];
 (uniformContainer spotter_1) additemcargoGlobal ["cse_morphine",1];
+spotter_1 addWeapon "tf_anprc148jem";
 spotter_1 selectWeapon (primaryWeapon spotter_1);
-	};
 };
 
