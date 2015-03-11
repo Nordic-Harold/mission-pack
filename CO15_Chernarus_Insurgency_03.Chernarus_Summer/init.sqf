@@ -39,3 +39,52 @@ if (!isDedicated) then {
 		[taskAmbush,"Succeeded"] call a3_setTaskState;
 	};
 };
+
+// Dev mode
+if (!isDedicated) then {
+	waitUntil{player==player};
+	_devMode="Dev" call BIS_fnc_getParamValue;
+	//uncomment this for preview dev mode
+	//_devMode=1;
+	
+	if (_devMode==1) then {
+		hint "Development mode enabled, player is indestructible.";
+		player allowDamage false;
+		
+		player addAction [
+			"Teleport",
+			{ 
+				openMap true; 
+				(_this select 1) onMapSingleClick 
+				{ 
+					_this setPos _pos; 					
+					onMapSingleClick {false};
+					openMap false;
+					cutText ["Teleported!","PLAIN",2];
+				};				
+			},
+			nil,
+			1,
+			false
+		];	
+
+		player addAction [
+			"Reveal all",
+			{
+				{
+					(group player) reveal [_x,4];
+					_veh=vehicle _x;
+					
+					if (!isNil "_veh") then {
+						(group player) reveal [_veh,4];
+					};
+				} forEach allUnits;
+				
+				cutText ["All revealed!","PLAIN",2];
+			},
+			nil,
+			1,
+			false		
+		];
+	};
+};
