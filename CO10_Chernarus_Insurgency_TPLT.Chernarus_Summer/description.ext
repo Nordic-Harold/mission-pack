@@ -45,5 +45,12 @@ class Params
 		default = 0;
 		isGlobal = 1;
 		function = "BIS_fnc_setOvercast";
-	}
+	};
+	class Dev
+	{
+		title = "Development mode";
+		texts[] = {"On","Off"};
+		values[] = {1,0};
+		default = 0;
+	};
 };

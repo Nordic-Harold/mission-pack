@@ -32,7 +32,8 @@ class Mission
 	randomSeed=9910656;
 	class Intel
 	{
-		briefingName="Chernerus rebellion";
+		briefingName="CO10 - Chernerus rebellion - Template";
+		overviewText="Template mission.";
 		startWeather=0.25;
 		startWind=0.099999994;
 		startWaves=0.099999994;

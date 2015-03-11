@@ -15,3 +15,13 @@ enableSaving [ false, false ];
 
 // Ušutkaj AI 
 enableSentences false;
+
+if (!isDedicated) then {
+	waitUntil{player==player};
+	_devMode="Dev" call BIS_fnc_getParamValue;
+	
+	if (_devMode==1) then {
+		hint "Development mode enabled, player is indestructible.";
+		player allowDamage false;
+	};
+};
