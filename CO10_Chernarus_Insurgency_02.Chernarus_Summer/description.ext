@@ -6,7 +6,7 @@ author		= "A3Pro";
 overviewPicture	= "images\load_ttw_rexa.paa";
 overviewText = "";
 
-OnLoadName 	= "Chernarus rebellion - Gathering intel";
+OnLoadName 	= "Chernarus rebellion";
 loadScreen 	= "images\load_ttw_rexa.paa";
 OnLoadMission = "";
 OnLoadIntro = "";
@@ -37,4 +37,12 @@ class Params
 		isGlobal = 1;
 		function = "BIS_fnc_setOvercast";
 	}
+
+	class Dev
+	{
+		title = "Development mode";
+		texts[] = {"On","Off"};
+		values[] = {1,0};
+		default = 0;
+	};
 };
