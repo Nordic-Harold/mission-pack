@@ -112,7 +112,7 @@ class Mission
 					id=0;
 					side="GUER";
 					vehicle="rhs_g_Soldier_SL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -3677,8 +3677,7 @@ class Mission
 			expActiv="hint ""Move out, don't linger too long."";";
 			class Effects
 			{
-				voice="rhs_rus_land_rc_03";
-				track="EventTrack02_F_EPB";
+				track="AmbientTrack01_F";
 			};
 		};
 		class Item1
@@ -3710,9 +3709,7 @@ class Mission
 			expActiv="any = [""Gathering intel"",""May 2008""] spawn BIS_fnc_infoText;";
 			class Effects
 			{
-				soundEnv="MeadowsNight";
-				soundDet="nightingale";
-				track="BAF_Track04";
+				track="QGTrack2";
 			};
 		};
 		class Item3
