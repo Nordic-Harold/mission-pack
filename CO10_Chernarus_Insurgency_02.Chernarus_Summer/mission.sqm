@@ -302,7 +302,7 @@ class Mission
 					leader=1;
 					lock="LOCKED";
 					skill=0.60000002;
-					init="this additem ""sc_cellphone""; this additem ""sc_marijuana"";this disableAI ""ANIM""";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_cellphone"";this additem ""sc_marijuana""; };";
 				};
 			};
 		};
@@ -368,7 +368,7 @@ class Mission
 				class Item0
 				{
 					position[]={10280.337,45.080578,3814.0464};
-					azimut=-231.18788;
+					azimut=-231.188;
 					id=17;
 					side="CIV";
 					vehicle="C_man_polo_4_F";
@@ -394,7 +394,7 @@ class Mission
 					leader=1;
 					lock="LOCKED";
 					skill=0.60000002;
-					init="this additem ""sc_files""; this additem ""sc_money"";this disableAI ""ANIM""";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money""; this additem ""sc_files"" };";
 				};
 			};
 		};
@@ -414,7 +414,7 @@ class Mission
 					leader=1;
 					lock="LOCKED";
 					skill=0.60000002;
-					init="this additem ""sc_cellphone""; this additem ""sc_money"";this disableAI ""ANIM""";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money"";this additem ""sc_cellphone"";  };";
 				};
 			};
 		};
@@ -454,7 +454,7 @@ class Mission
 					leader=1;
 					lock="LOCKED";
 					skill=0.60000002;
-					init="this additem ""sc_keycard""; this additem ""tablet"";";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money"";this additem ""sc_keycard""; this additem ""sc_tablet"" };";
 				};
 			};
 		};
@@ -2495,7 +2495,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="target";
-					init="this additem ""sc_money"";this additem ""sc_schematic"";this additem ""sc_usbdrive"";this disableAI ""ANIM""";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money"";this additem ""sc_schematic"";this additem ""sc_usbdrive"";  };";
 				};
 			};
 		};

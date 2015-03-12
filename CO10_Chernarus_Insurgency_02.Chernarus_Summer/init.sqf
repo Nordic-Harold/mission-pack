@@ -64,3 +64,12 @@ if (!isDedicated) then {
 		];
 	};
 };
+
+// briefing
+player createDiaryRecord ["Diary",["Supports","During our time in Pusta, we've made a few friends with the local hunters and they've expressed their discontent with the current regime. We've assigned them an east-bound vector from Pusta with orders to kill anything Russian. They may prove a valuable asset...if they survive."]];
+
+player createDiaryRecord ["Diary",["Execution","There is no need to kill the civilians as they are unarmed and non-hostile. You may, however, if you choose to do so. Just remember - our goal is to gain the local populace trust and killing their family might not be the best way to go about doing that."]];
+
+player createDiaryRecord ["Diary",["Mission","Every friday night a group of collaborators from the power plant gathers at the brothel near the Topolka Dam. They drink until late at night then have their way with the women. Your mission is to assault them and take away all items which may contain intel.<br></br><br></br>Amongst them there is a Chinese expert sent to help with the powerplant routines. We want to send a message to any outsider who thinks such behaviour can go unpunished. Kill him."]];
+
+player createDiaryRecord ["Diary",["Situation","Our activities at Elektrozavodsk have drawn attention from the enemy. There are patrolling soldiers all around the objective.<br></br><br></br>You can approach the target from west, north or east, but DO NOT attempt a southern approach. The area is littered with enemy soldiers and anti-personel mines."]];
