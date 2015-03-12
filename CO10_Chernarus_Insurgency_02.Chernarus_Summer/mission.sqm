@@ -112,7 +112,7 @@ class Mission
 					id=0;
 					side="GUER";
 					vehicle="rhs_g_Soldier_SL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -2486,7 +2486,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10282.936,45.090134,3812.9077};
+					position[]={10282.838,45.156624,3813.9595};
 					azimut=-131.244;
 					id=118;
 					side="CIV";
@@ -2495,7 +2495,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="target";
-					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money"";this additem ""sc_schematic"";this additem ""sc_usbdrive"";  };";
+					init="this disableAI ""ANIM"";if (isServer) then {    this additem ""sc_money"";this additem ""sc_schematic"";this additem ""sc_usbdrive""; }";
 				};
 			};
 		};
