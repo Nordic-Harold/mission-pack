@@ -80,7 +80,7 @@ class Mission
 	randomSeed=9910656;
 	class Intel
 	{
-		briefingName="CO_10_Chernarus_Insurgency_02";
+		briefingName="CO10 - Chernarus rebellion - 02";
 		timeOfChanges=3600;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -112,7 +112,7 @@ class Mission
 					id=0;
 					side="GUER";
 					vehicle="rhs_g_Soldier_SL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -1921,7 +1921,7 @@ class Mission
 					position[]={10222.569,23.958881,3060.1843};
 					type="GETIN";
 					speed="FULL";
-					synchronizations[]={7};
+					synchronizations[]={9};
 					class Effects
 					{
 					};
@@ -3662,7 +3662,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={10278.701,44.87088,3810.241};
@@ -3695,7 +3695,7 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={1,6};
+			synchronizations[]={1};
 			syncId=7;
 		};
 		class Item2
@@ -3751,6 +3751,24 @@ class Mission
 				titleType="TEXT";
 				title="Good work boys. Rest now and we continue tomorrow....";
 			};
+		};
+		class Item5
+		{
+			position[]={10282.902,47.272041,3841.1147};
+			a=0;
+			b=0;
+			timeoutMin=90;
+			timeoutMid=90;
+			timeoutMax=90;
+			interruptable=1;
+			age="UNKNOWN";
+			name="trig_1_1";
+			expCond="!alive target";
+			class Effects
+			{
+			};
+			synchronizations[]={6};
+			syncId=9;
 		};
 	};
 };
