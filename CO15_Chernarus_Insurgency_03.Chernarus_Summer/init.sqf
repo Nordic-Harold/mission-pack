@@ -2,6 +2,11 @@ leaFunction =  compile preprocessFileLineNumbers "lea\loadout-init.sqf"; call le
 
 call compile preprocessFileLineNumbers "a3\guard.sqf";
 call compile preprocessFileLineNumbers "a3\tasks.sqf";
+a3_detect=compile preprocessFileLineNumbers "a3\detect.sqf";
+a3_arty=compile preprocessFileLineNumbers "a3\arty.sqf";
+a3_destroy=compile preprocessFileLineNumbers "a3\search_destroy.sqf";
+a3_suppress=compile preprocessFileLineNumbers "a3\suppress.sqf";
+
 
 enableEngineArtillery false;
 
