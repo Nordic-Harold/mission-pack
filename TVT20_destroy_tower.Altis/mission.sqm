@@ -1,0 +1,704 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"rhs_c_troops",
+		"rhsusf_c_troops",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Soft_F_HEMTT",
+		"rhs_c_cars",
+		"rhs_c_weapons",
+		"A3_Weapons_F_Ammoboxes",
+		"A3_Modules_F",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Modules_F_Intel"
+	};
+	addOnsAuto[]=
+	{
+		"rhs_c_troops",
+		"rhsusf_c_troops",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Modules_F_Intel",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Soft_F_HEMTT",
+		"rhs_c_cars",
+		"rhs_c_weapons",
+		"A3_Weapons_F_Ammoboxes",
+		"a3_map_altis"
+	};
+	randomSeed=3748645;
+	class Intel
+	{
+		briefingName="Destroy the Tower";
+		overviewText="A squad of NATO special forces are tasked to destroy CSAT tower around Kore.";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=6;
+		day=24;
+		hour=4;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=6;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7109.5854,111.44836,16432.531};
+					id=0;
+					side="EAST";
+					vehicle="rhs_vdv_sergeant";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.55000001;
+					text="o_tl1";
+				};
+				class Item1
+				{
+					position[]={7104.5854,110.72642,16427.531};
+					id=1;
+					side="EAST";
+					vehicle="rhs_vdv_machinegunner";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_mg1";
+				};
+				class Item2
+				{
+					position[]={7108.8306,110.89263,16426.752};
+					id=2;
+					side="EAST";
+					vehicle="rhs_vdv_at";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_at1";
+				};
+				class Item3
+				{
+					position[]={7114.5854,111.54595,16427.531};
+					id=3;
+					side="EAST";
+					vehicle="rhs_vdv_strelok_rpg_assist";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_ga1";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={7129.6226,111.63139,16424.318};
+					id=4;
+					side="EAST";
+					vehicle="rhs_vdv_sergeant";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.55000001;
+					text="o_tl2";
+				};
+				class Item1
+				{
+					position[]={7124.6226,111.36631,16419.318};
+					id=5;
+					side="EAST";
+					vehicle="rhs_vdv_machinegunner";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_mg2";
+				};
+				class Item2
+				{
+					position[]={7128.8677,111.38123,16418.539};
+					id=6;
+					side="EAST";
+					vehicle="rhs_vdv_at";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_at2";
+				};
+				class Item3
+				{
+					position[]={7134.6226,111.38942,16419.318};
+					id=7;
+					side="EAST";
+					vehicle="rhs_vdv_strelok_rpg_assist";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="o_ga2";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=13;
+				class Item0
+				{
+					position[]={8083.6553,114.04451,15991.604};
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_squadleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					text="b_sl";
+				};
+				class Item1
+				{
+					position[]={8069.4282,114.01163,15987.744};
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl1";
+				};
+				class Item2
+				{
+					position[]={8069.5088,113.59069,15985.696};
+					id=10;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_machinegunner";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar1";
+				};
+				class Item3
+				{
+					position[]={8071.4746,113.70856,15984.558};
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_r1";
+				};
+				class Item4
+				{
+					position[]={8073.7715,114.03142,15983.909};
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman_m4";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_rm1";
+				};
+				class Item5
+				{
+					position[]={8080.459,114.38928,15982};
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl2";
+				};
+				class Item6
+				{
+					position[]={8082.8975,114.33462,15981.8};
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar2";
+				};
+				class Item7
+				{
+					position[]={8092.6914,115.50071,15984.124};
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_r3";
+				};
+				class Item8
+				{
+					position[]={8094.7412,116.33264,15986.134};
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_riflemanat";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_rm3";
+				};
+				class Item9
+				{
+					position[]={8090.8667,114.92359,15983.627};
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl3";
+				};
+				class Item10
+				{
+					position[]={8093.7002,115.9051,15985.085};
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar3";
+				};
+				class Item11
+				{
+					position[]={8087.4502,114.59258,15981.285};
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_r2";
+				};
+				class Item12
+				{
+					position[]={8085.2749,114.31093,15981.382};
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_marksman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_mark2";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7543.9629,117.52536,16286.554};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminLogged";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Admin Zeus";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=21;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7168.0229,109.63968,16398.795};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="4";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="taskTower";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Destroy tower";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Destroy communication tower inside Kore";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="CREATED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=22;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=0;
+					synchronizations[]={1};
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7169.2402,109.42659,16393.908};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="SUCCEEDED";
+							parentCls="ModuleTaskSetState_F";
+							typeName="State";
+						};
+					};
+					id=23;
+					side="LOGIC";
+					vehicle="ModuleTaskSetState_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=1;
+					synchronizations[]={0,2};
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=15;
+		class Item0
+		{
+			position[]={8074.7246,114.62819,15994.449};
+			azimut=34.979069;
+			id=24;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_4dr";
+			skill=0.40000001;
+		};
+		class Item1
+		{
+			position[]={8071.6821,114.81221,15996.964};
+			azimut=34.641689;
+			id=25;
+			side="EMPTY";
+			vehicle="B_Truck_01_covered_F";
+			skill=0.40000001;
+		};
+		class Item2
+		{
+			position[]={8077.4492,114.47068,15992.456};
+			azimut=35.947037;
+			id=26;
+			side="EMPTY";
+			vehicle="rhsusf_m998_w_s_4dr";
+			skill=0.40000001;
+		};
+		class Item3
+		{
+			position[]={6061.9526,43,16214.564};
+			id=27;
+			side="EMPTY";
+			vehicle="rhs_tigr_msv";
+			skill=0.40000001;
+		};
+		class Item4
+		{
+			position[]={6065.9287,43,16214.282};
+			id=28;
+			side="EMPTY";
+			vehicle="rhs_tigr_3camo_msv";
+			skill=0.40000001;
+		};
+		class Item5
+		{
+			position[]={6069.8164,43,16214.282};
+			id=29;
+			side="EMPTY";
+			vehicle="rhs_tigr_ffv_msv";
+			skill=0.40000001;
+		};
+		class Item6
+		{
+			position[]={6068.5669,43,16201.528};
+			id=30;
+			side="EMPTY";
+			vehicle="rhs_weapons_crate_ak_ammo_545x39_standard";
+			skill=0.40000001;
+		};
+		class Item7
+		{
+			position[]={6068.644,43,16200.264};
+			id=31;
+			side="EMPTY";
+			vehicle="rhs_weapons_crate_ak_ammo_545x39_standard";
+			skill=0.40000001;
+		};
+		class Item8
+		{
+			position[]={6068.6431,43,16198.544};
+			id=32;
+			side="EMPTY";
+			vehicle="rhs_weapons_crate_ak_ammo_545x39_standard";
+			skill=0.40000001;
+		};
+		class Item9
+		{
+			position[]={6068.6484,43,16196.987};
+			id=33;
+			side="EMPTY";
+			vehicle="rhs_weapons_crate_ak_ammo_545x39_standard";
+			skill=0.40000001;
+		};
+		class Item10
+		{
+			position[]={6066.5054,43,16201.558};
+			id=34;
+			side="EMPTY";
+			vehicle="O_supplyCrate_F";
+			skill=0.40000001;
+			text="crate1";
+		};
+		class Item11
+		{
+			position[]={8081.4575,114.35882,15994.864};
+			id=35;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.40000001;
+			text="crate2";
+		};
+		class Item12
+		{
+			position[]={8083.897,114.36224,15994.865};
+			id=36;
+			side="EMPTY";
+			vehicle="Box_NATO_AmmoOrd_F";
+			skill=0.40000001;
+		};
+		class Item13
+		{
+			position[]={8086.3057,114.81662,15994.865};
+			id=37;
+			side="EMPTY";
+			vehicle="Box_NATO_AmmoOrd_F";
+			skill=0.40000001;
+		};
+		class Item14
+		{
+			position[]={8081.4116,114.24059,15993.65};
+			id=38;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.40000001;
+			text="crate3";
+		};
+	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={8071.7012,115.19875,16009.447};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={6067.1943,43,16209.471};
+			name="respawn_east";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={7154.2866,109.34142,16393.785};
+			name="CTower";
+			text="Communication Tower";
+			type="mil_objective";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7154.6279,109.59646,16397.732};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="!(alive tower)";
+			class Effects
+			{
+			};
+			synchronizations[]={1};
+			syncId=2;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=11536420;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=5229663;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=2748182;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
