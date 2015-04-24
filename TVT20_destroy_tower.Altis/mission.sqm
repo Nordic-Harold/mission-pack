@@ -14,14 +14,15 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Modules_F",
 		"A3_Modules_F_Curator_Curator",
-		"A3_Modules_F_Intel"
+		"A3_Modules_F_Intel",
+		"A3_Modules_F_GroupModifiers"
 	};
 	addOnsAuto[]=
 	{
 		"rhs_c_troops",
-		"rhsusf_c_troops",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Modules_F_Intel",
+		"rhsusf_c_troops",
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"A3_Soft_F_HEMTT",
@@ -52,7 +53,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=6;
+		items=9;
 		class Item0
 		{
 			side="EAST";
@@ -96,7 +97,7 @@ class Mission
 					position[]={7114.5854,111.54595,16427.531};
 					id=3;
 					side="EAST";
-					vehicle="rhs_vdv_strelok_rpg_assist";
+					vehicle="rhs_vdv_marksman";
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="o_ga1";
@@ -146,7 +147,7 @@ class Mission
 					position[]={7134.6226,111.38942,16419.318};
 					id=7;
 					side="EAST";
-					vehicle="rhs_vdv_strelok_rpg_assist";
+					vehicle="rhs_vdv_engineer";
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="o_ga2";
@@ -154,150 +155,6 @@ class Mission
 			};
 		};
 		class Item2
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=13;
-				class Item0
-				{
-					position[]={8083.6553,114.04451,15991.604};
-					id=8;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_squadleader";
-					player="PLAY CDG";
-					leader=1;
-					rank="SERGEANT";
-					skill=0.5;
-					text="b_sl";
-				};
-				class Item1
-				{
-					position[]={8069.4282,114.01163,15987.744};
-					id=9;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_teamleader";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.44999999;
-					text="b_tl1";
-				};
-				class Item2
-				{
-					position[]={8069.5088,113.59069,15985.696};
-					id=10;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_machinegunner";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_ar1";
-				};
-				class Item3
-				{
-					position[]={8071.4746,113.70856,15984.558};
-					id=11;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_rifleman";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.44999999;
-					text="b_r1";
-				};
-				class Item4
-				{
-					position[]={8073.7715,114.03142,15983.909};
-					id=12;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_rifleman_m4";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_rm1";
-				};
-				class Item5
-				{
-					position[]={8080.459,114.38928,15982};
-					id=13;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_teamleader";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.44999999;
-					text="b_tl2";
-				};
-				class Item6
-				{
-					position[]={8082.8975,114.33462,15981.8};
-					id=14;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_ar2";
-				};
-				class Item7
-				{
-					position[]={8092.6914,115.50071,15984.124};
-					id=15;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_rifleman";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_r3";
-				};
-				class Item8
-				{
-					position[]={8094.7412,116.33264,15986.134};
-					id=16;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_riflemanat";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_rm3";
-				};
-				class Item9
-				{
-					position[]={8090.8667,114.92359,15983.627};
-					id=17;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_teamleader";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.44999999;
-					text="b_tl3";
-				};
-				class Item10
-				{
-					position[]={8093.7002,115.9051,15985.085};
-					id=18;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_ar3";
-				};
-				class Item11
-				{
-					position[]={8087.4502,114.59258,15981.285};
-					id=19;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_rifleman";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_r2";
-				};
-				class Item12
-				{
-					position[]={8085.2749,114.31093,15981.382};
-					id=20;
-					side="WEST";
-					vehicle="rhsusf_usmc_marpat_wd_marksman";
-					player="PLAY CDG";
-					skill=0.40000001;
-					text="b_mark2";
-				};
-			};
-		};
-		class Item3
 		{
 			side="LOGIC";
 			class Vehicles
@@ -334,7 +191,7 @@ class Mission
 							typeName="Forced";
 						};
 					};
-					id=21;
+					id=8;
 					side="LOGIC";
 					vehicle="ModuleCurator_F";
 					leader=1;
@@ -343,7 +200,7 @@ class Mission
 				};
 			};
 		};
-		class Item4
+		class Item3
 		{
 			side="LOGIC";
 			class Vehicles
@@ -398,7 +255,7 @@ class Mission
 							typeName="State";
 						};
 					};
-					id=22;
+					id=9;
 					side="LOGIC";
 					vehicle="ModuleTaskCreate_F";
 					leader=1;
@@ -409,7 +266,7 @@ class Mission
 				};
 			};
 		};
-		class Item5
+		class Item4
 		{
 			side="LOGIC";
 			class Vehicles
@@ -428,7 +285,7 @@ class Mission
 							typeName="State";
 						};
 					};
-					id=23;
+					id=10;
 					side="LOGIC";
 					vehicle="ModuleTaskSetState_F";
 					leader=1;
@@ -439,10 +296,199 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8079.1255,114.39498,15988.233};
+					azimut=372.01401;
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_sniper";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					text="b_sl";
+					init="(group this) setgroupID [""HQ""];";
+					description="<<HQ>> Squad Leader";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8080.459,114.38928,15982};
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl2";
+					init="(group this) setgroupID [""Security""];";
+					description="<Security> Team Leader";
+				};
+				class Item1
+				{
+					position[]={8082.8975,114.33462,15981.8};
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar2";
+					init="(group this) setgroupID [""Security""];";
+				};
+				class Item2
+				{
+					position[]={8085.2749,114.31093,15981.382};
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_marksman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_mark2";
+					init="(group this) setgroupID [""Security""];";
+				};
+				class Item3
+				{
+					position[]={8087.4502,114.59258,15981.285};
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_riflemanat";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_r2";
+					init="(group this) setgroupID [""Security""];";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8090.8667,114.92359,15983.627};
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl3";
+					init="(group this) setgroupID [""Assault""];";
+					description="<Assault> Team Leader";
+				};
+				class Item1
+				{
+					position[]={8092.6914,115.50071,15984.124};
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_r3";
+					init="(group this) setgroupID [""Assault""];";
+				};
+				class Item2
+				{
+					position[]={8093.7002,115.9051,15985.085};
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_autorifleman";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar3";
+					init="(group this) setgroupID [""Assault""];";
+				};
+				class Item3
+				{
+					position[]={8094.7412,116.33264,15986.134};
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman_light";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_rm3";
+					init="(group this) setgroupID [""Assault""];";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8069.4282,114.01163,15987.744};
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_tl1";
+					init="(group this) setgroupID [""Support""];";
+					description="<Support> Team Leader";
+				};
+				class Item1
+				{
+					position[]={8069.5088,113.59069,15985.696};
+					id=21;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_machinegunner";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_ar1";
+					init="(group this) setgroupID [""Support""];";
+				};
+				class Item2
+				{
+					position[]={8071.4746,113.70856,15984.558};
+					id=22;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.44999999;
+					text="b_r1";
+					init="(group this) setgroupID [""Support""];";
+				};
+				class Item3
+				{
+					position[]={8073.7715,114.03142,15983.909};
+					id=23;
+					side="WEST";
+					vehicle="rhsusf_usmc_marpat_wd_rifleman_m4";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="b_rm1";
+					init="(group this) setgroupID [""Support""];";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=15;
+		items=16;
 		class Item0
 		{
 			position[]={8074.7246,114.62819,15994.449};
@@ -568,6 +614,16 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.40000001;
 			text="crate3";
+		};
+		class Item15
+		{
+			position[]={7121.8867,112.12519,16437.244};
+			azimut=28.738199;
+			id=39;
+			side="EMPTY";
+			vehicle="Box_East_AmmoOrd_F";
+			skill=0.40000001;
+			text="crate4";
 		};
 	};
 	class Markers

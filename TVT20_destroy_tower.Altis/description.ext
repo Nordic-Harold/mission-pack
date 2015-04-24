@@ -8,7 +8,7 @@ author		= "A3Pro";
 //overviewPicture	= "images\load_ttw_rexa.paa";
 overviewText = "";
 
-OnLoadName 	= "PoC TvT";
+OnLoadName 	= "Zeus TvT";
 //loadScreen 	= "images\load_ttw_rexa.paa";
 OnLoadMission = "";
 OnLoadIntro = "";

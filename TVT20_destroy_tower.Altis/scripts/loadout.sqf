@@ -6,6 +6,9 @@ if (isServer) then {
 	crate1 addItemCargoGlobal ["ItemGPS",20];
 	crate1 addMagazineCargoGlobal ["rhs_rpg7_PG7VL_mag",20];
 	crate1 addMagazineCargoGlobal ["SmokeShell",20];
+	crate1 addItemCargoGlobal ["rhs_acc_pgo7v",5];
+	crate1 addMagazineCargoGlobal ["rhs_mine_pmn2_mag",4];
+	crate1 addMagazineCargoGlobal ["rhs_mine_tm62m_mag",2];
 	
 	clearItemCargoGlobal crate2; 
 	clearWeaponCargoGlobal crate2; 
@@ -22,7 +25,14 @@ if (isServer) then {
 	clearWeaponCargoGlobal crate3; 
 	clearMagazineCargoGlobal crate3; 
 	clearBackpackCargoGlobal crate3; 
-	crate3 addItemCargoGlobal ["ItemGPS",20];
-	crate3 addWeaponCargoGlobal ["rhs_weap_fgm148",10];
-	crate3 addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",30];
+	crate3 addWeaponCargoGlobal ["rhs_weap_fgm148",5];
+	crate3 addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",10];
+	crate3 addMagazineCargoGlobal ["rhs_mag_M441_HE",30];
+	
+	clearItemCargoGlobal crate4; 
+	clearWeaponCargoGlobal crate4; 
+	clearMagazineCargoGlobal crate4; 
+	clearBackpackCargoGlobal crate4;
+	crate4 addMagazineCargoGlobal ["rhs_mine_pmn2_mag",4];
+	crate4 addMagazineCargoGlobal ["rhs_mine_tm62m_mag",2];
 };
