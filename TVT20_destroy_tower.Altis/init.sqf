@@ -1,3 +1,5 @@
+private ["_devMode", "_veh", "_handle"];
+
 enableEngineArtillery false;
 
 // Task Force Radio Client Settings
