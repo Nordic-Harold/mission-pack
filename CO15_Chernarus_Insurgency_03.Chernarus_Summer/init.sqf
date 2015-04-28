@@ -10,7 +10,7 @@ a3_suppress=compile preprocessFileLineNumbers "a3\suppress.sqf";
 enableEngineArtillery false;
 
 // Task Force Radio Client Settings
-tf_no_auto_long_range_radio = true;
+tf_no_auto_long_range_radio = false;
 tf_give_personal_radio_to_regular_soldier = false;
 tf_give_microdagr_to_soldier = false;
 tf_same_sw_frequencies_for_side = true;

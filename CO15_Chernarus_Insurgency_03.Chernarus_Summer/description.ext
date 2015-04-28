@@ -1,5 +1,7 @@
-respawn 	= 0;
-respawnDialog 	= 1;
+respawn = 5;
+respawnDelay = 60;
+respawnDialog = 1;
+respawnButton = 0;
 disabledAI 	= 0;
 
 author		= "A3Pro";
@@ -8,8 +10,8 @@ overviewText = "";
 
 OnLoadName 	= "Chernarus rebellion";
 loadScreen 	= "images\load_ttw_rexa.paa";
-OnLoadMission = "";
-OnLoadIntro = "";
+OnLoadMission = "Ambush-mission 3";
+OnLoadIntro = "If you are involved in a fair fight, you didn't plan it properly.";
 
 class Header
 {
