@@ -7,7 +7,6 @@ a3_arty=compile preprocessFileLineNumbers "a3\arty.sqf";
 a3_destroy=compile preprocessFileLineNumbers "a3\search_destroy.sqf";
 a3_suppress=compile preprocessFileLineNumbers "a3\suppress.sqf";
 
-
 enableEngineArtillery false;
 
 // Task Force Radio Client Settings

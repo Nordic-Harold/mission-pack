@@ -17,7 +17,10 @@ class Mission
 		"rhs_c_a2port_car",
 		"rhs_c_bmp",
 		"A3_Weapons_F_Ammoboxes",
-		"rhs_c_troops"
+		"rhs_c_troops",
+		"A3_Structures_F_Civ_Camping",
+		"aia_misc3_config",
+		"A3_Modules_F_Curator_Curator"
 	};
 	addOnsAuto[]=
 	{
@@ -34,7 +37,10 @@ class Mission
 		"rhs_c_a2port_car",
 		"rhs_c_bmp",
 		"rhs_c_troops",
+		"A3_Modules_F_Curator_Curator",
 		"A3_Weapons_F_Ammoboxes",
+		"A3_Structures_F_Civ_Camping",
+		"aia_misc3_config",
 		"aia_chernarus_summer_config"
 	};
 	randomSeed=9910656;
@@ -58,7 +64,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=25;
+		items=28;
 		class Item0
 		{
 			side="LOGIC";
@@ -1654,15 +1660,98 @@ class Mission
 				};
 			};
 		};
+		class Item25
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11231.145,294.20578,4265.8911};
+					azimut=262.67038;
+					id=74;
+					side="GUER";
+					vehicle="rhs_g_Soldier_F3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item26
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11246.521,293.68964,4265.312};
+					azimut=-314.47064;
+					id=75;
+					side="GUER";
+					vehicle="rhs_g_Soldier_F3";
+					leader=1;
+					skill=0.60000002;
+					init="this setPosATL [11255.1,4273.26,20.9768];";
+				};
+			};
+		};
+		class Item27
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11395.93,219.91118,4400.4092};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminVoted";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=76;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=2;
+		items=11;
 		class Item0
 		{
 			position[]={11259.244,290.21375,4299.3696};
 			azimut=-324.82001;
-			id=74;
+			id=77;
 			side="EMPTY";
 			vehicle="Box_IND_WpsLaunch_F";
 			leader=1;
@@ -1673,12 +1762,87 @@ class Mission
 		{
 			position[]={11257.069,290.21375,4300.835};
 			azimut=-324.82001;
-			id=75;
+			id=78;
 			side="EMPTY";
 			vehicle="Box_IND_WpsLaunch_F";
 			leader=1;
 			skill=0.60000002;
 			text="b_weapons_crate2";
+		};
+		class Item2
+		{
+			position[]={11239.643,294.26849,4266.7896};
+			id=79;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={11242.745,294.15668,4266.7896};
+			id=80;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={11240.772,294.08951,4269.1255};
+			id=81;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={11241.431,294.25305,4264.9292};
+			id=82;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={11236.905,294.13129,4269.8555};
+			id=83;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={11236.942,294.34619,4266.4614};
+			id=84;
+			side="EMPTY";
+			vehicle="Land_Sleeping_bag_F";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={11230.861,294.61667,4260.5566};
+			azimut=-103.86868;
+			id=85;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={11230.296,294.42319,4262.4517};
+			azimut=-108.18472;
+			id=86;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={11231.46,294.21317,4266.1489};
+			azimut=76.54528;
+			id=87;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_small";
+			skill=0.60000002;
 		};
 	};
 	class Markers
@@ -1773,7 +1937,7 @@ class Mission
 			expActiv="any=[""ArmA3Pro presents""] spawn BIS_fnc_infoText;";
 			class Effects
 			{
-				track="EventTrack03a_F_EPA";
+				track="LeadTrack03_F_EPC";
 			};
 		};
 		class Item5
