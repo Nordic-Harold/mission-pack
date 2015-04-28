@@ -315,7 +315,7 @@ class Mission
 					skill=0.5;
 					text="b_sl";
 					init="(group this) setgroupID [""HQ""];";
-					description="<<HQ>> Squad Leader";
+					description="<<HQ>> Squad Leader (Sniper)";
 				};
 			};
 		};
@@ -337,7 +337,7 @@ class Mission
 					skill=0.44999999;
 					text="b_tl2";
 					init="(group this) setgroupID [""Security""];";
-					description="<Security> Team Leader";
+					description="<Security> Team Leader (GL)";
 				};
 				class Item1
 				{
@@ -349,6 +349,7 @@ class Mission
 					skill=0.40000001;
 					text="b_ar2";
 					init="(group this) setgroupID [""Security""];";
+					description="Autorifleman (M4 full auto w/30Rnd mag)";
 				};
 				class Item2
 				{
@@ -392,7 +393,7 @@ class Mission
 					skill=0.44999999;
 					text="b_tl3";
 					init="(group this) setgroupID [""Assault""];";
-					description="<Assault> Team Leader";
+					description="<Assault> Team Leader (GL)";
 				};
 				class Item1
 				{
@@ -415,6 +416,7 @@ class Mission
 					skill=0.40000001;
 					text="b_ar3";
 					init="(group this) setgroupID [""Assault""];";
+					description="Autorifleman (M4 full auto w/30Rnd mag)";
 				};
 				class Item3
 				{
@@ -447,7 +449,7 @@ class Mission
 					skill=0.44999999;
 					text="b_tl1";
 					init="(group this) setgroupID [""Support""];";
-					description="<Support> Team Leader";
+					description="<Support> Team Leader (GL)";
 				};
 				class Item1
 				{
