@@ -1,0 +1,301 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=16559056;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Markers
+	{
+		items=22;
+		class Item0
+		{
+			position[]={21038.154,36.869041,17044.805};
+			name="nato_general";
+			text="General NATO";
+			type="mil_end";
+			colorName="ColorGreen";
+		};
+		class Item1
+		{
+			position[]={26742.219,20.660566,24647.928};
+			name="csat_general";
+			text="General CSAT";
+			type="mil_end";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={20940.414,14.076325,19241.875};
+			name="Bunker_1_NATO";
+			text="Bunker_1_NATO";
+			type="loc_Bunker";
+			colorName="ColorPink";
+		};
+		class Item3
+		{
+			position[]={21870.309,23.88199,20999.313};
+			name="Bunker_2_NATO";
+			text="Bunker_2_NATO";
+			type="loc_Bunker";
+			colorName="ColorPink";
+		};
+		class Item4
+		{
+			position[]={23512.09,91.63475,21132.082};
+			name="Lieutenant_NATO";
+			text="Lieutenant NATO";
+			type="mil_warning";
+			colorName="ColorGreen";
+		};
+		class Item5
+		{
+			position[]={25249.279,85.811996,21817.695};
+			name="Lieutenant_CSAT";
+			text="Lieutenant CSAT";
+			type="mil_warning";
+			colorName="ColorRed";
+		};
+		class Item6
+		{
+			position[]={23229.232,13.402001,19950.787};
+			name="Bunker_3_NATO";
+			text="Bunker_3_NATO";
+			type="loc_Bunker";
+			colorName="ColorPink";
+		};
+		class Item7
+		{
+			position[]={23972.35,14.640035,20158.389};
+			name="Bunker_4_NATO";
+			text="Bunker_4_NATO";
+			type="loc_Bunker";
+			colorName="ColorPink";
+		};
+		class Item8
+		{
+			position[]={25797.209,11.989197,23547.031};
+			name="Bunker_1_CSAT";
+			text="Bunker_1_CSAT";
+			type="loc_Bunker";
+			colorName="ColorOrange";
+		};
+		class Item9
+		{
+			position[]={26724.758,15.225759,21203.123};
+			name="Bunker_2_CSAT";
+			text="Bunker_2_CSAT";
+			type="loc_Bunker";
+			colorName="ColorOrange";
+		};
+		class Item10
+		{
+			position[]={26091.184,12.788116,20751.396};
+			name="Bunker_4_CSAT";
+			text="Bunker_4_CSAT";
+			type="loc_Bunker";
+			colorName="ColorOrange";
+		};
+		class Item11
+		{
+			position[]={24185.621,57.037041,22610.307};
+			name="Bunker_3_CSAT";
+			text="Bunker_3_CSAT";
+			type="loc_Bunker";
+			colorName="ColorOrange";
+		};
+		class Item12
+		{
+			position[]={20697.152,17.058405,15686.141};
+			name="Starting Point NATO";
+			text="Starting/Fallback Point NATO";
+			type="mil_flag";
+			colorName="ColorGreen";
+		};
+		class Item13
+		{
+			position[]={28017.367,36.155048,25181.871};
+			name="Starting Point CSAT";
+			text="Starting/Fallback Point CSAT";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item14
+		{
+			position[]={25422.086,9.9599247,20341.813};
+			name="respawn1";
+			text="Respawn 1";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item15
+		{
+			position[]={22427.227,5.8885593,21875.029};
+			name="respawn2";
+			text="Respawn 2";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item16
+		{
+			position[]={20272.729,11.937722,19507.387};
+			name="respawn3";
+			text="Respawn 3";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item17
+		{
+			position[]={24726.271,12.023603,23671.184};
+			name="respawn4";
+			text="Respawn 4";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item18
+		{
+			position[]={21363.717,22.641697,16435.789};
+			name="respawn5";
+			text="Respawn 5";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item19
+		{
+			position[]={27337.498,7.1637692,24449.779};
+			name="respawn6";
+			text="Respawn 6";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item20
+		{
+			position[]={22272.639,51.552242,19466.686};
+			name="respawn7";
+			text="Respawn 7";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+		class Item21
+		{
+			position[]={25657.242,23.930054,22865.225};
+			name="respawn8";
+			text="Respawn 8";
+			type="respawn_unknown";
+			colorName="ColorBlack";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=8318808;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=10519015;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=5989584;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
