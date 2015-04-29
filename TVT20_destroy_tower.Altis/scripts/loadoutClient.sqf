@@ -3,45 +3,61 @@ waitUntil { player == player };
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
 
+private ["_handle"];
+
 if (!isNil "o_tl1") then {
 	if (player == o_tl1) then {
-		player removePrimaryWeaponItem "rhs_acc_1p29";
+		_handle = player execVM "scripts\opfor\team_leader.sqf";
+		waitUntil {scriptDone _handle};
 	};	
 };
 
 if (!isNil "o_mg1") then {
 	if (player == o_mg1) then {
-		player removePrimaryWeaponItem "rhs_acc_1p29";
+		_handle = player execVM "scripts\opfor\machine_gunner.sqf";
+		waitUntil {scriptDone _handle};
 	};	
 };
 
 if (!isNil "o_at1") then {
 	if (player == o_at1) then {
-		player addPrimaryWeaponItem "rhs_acc_ekp1";
+		_handle = player execVM "scripts\opfor\anti_tank.sqf";
+		waitUntil {scriptDone _handle};
+	};
+};
+
+if (!isNil "o_ga1") then {
+	if (player == o_ga1) then {
+		_handle = player execVM "scripts\opfor\sniper.sqf";
+		waitUntil {scriptDone _handle};
 	};
 };
 
 if (!isNil "o_tl2") then {
 	if (player == o_tl2) then {
-		player removePrimaryWeaponItem "rhs_acc_1p29";
+		_handle = player execVM "scripts\opfor\team_leader.sqf";
+		waitUntil {scriptDone _handle};
 	};	
 };
 
 if (!isNil "o_mg2") then {
 	if (player == o_mg2) then {
-		player removePrimaryWeaponItem "rhs_acc_1p29";
+		_handle = player execVM "scripts\opfor\machine_gunner.sqf";
+		waitUntil {scriptDone _handle};
 	};	
 };
 
 if (!isNil "o_at2") then {
 	if (player == o_at2) then {
-		player addPrimaryWeaponItem "rhs_acc_ekp1";
+		_handle = player execVM "scripts\opfor\anti_tank.sqf";
+		waitUntil {scriptDone _handle};
 	};
 };
 
 if (!isNil "o_ga2") then {
 	if (player == o_ga2) then {
-		player removePrimaryWeaponItem "rhs_acc_1p63";
+		_handle = player execVM "scripts\opfor\grenadier.sqf";
+		waitUntil {scriptDone _handle};
 	};
 };
 
